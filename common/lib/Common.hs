@@ -1,6 +1,15 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Common
-  ( who
+  ( home
+  , Views
   ) where
 
-who :: String
-who = "Haskell"
+import Miso (View, text, div_)
+
+type Home = View ()
+
+type Views = Home
+
+home :: () -> View ()
+home = const $ div_ [] [ text "Hello, world!" ]

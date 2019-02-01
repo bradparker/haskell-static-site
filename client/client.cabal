@@ -10,7 +10,8 @@ common deps
   build-depends:
     base >=4.11 && <4.12,
     aeson,
-    common
+    common,
+    miso
 
 common ghc
   default-language:
